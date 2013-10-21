@@ -51,7 +51,7 @@ public class ICalendarProject {
     timezone = registry.getTimeZone(TimeZone.getDefault().getID());
     tz = timezone.getVTimeZone();
     calendar.getProperties()
-        .add(new ProdId("Team Flagler's Super iCal4j Calender App Version 6.9"));
+        .add(new ProdId("Team Tannat's iCal4j Calender App Version 2"));
     calendar.getProperties().add(Version.VERSION_2_0);
     calendar.getProperties().add(CalScale.GREGORIAN);
     System.out.println(tz.toString());
@@ -64,7 +64,7 @@ public class ICalendarProject {
     timezone = registry.getTimeZone(selectedTimezone);
     tz = timezone.getVTimeZone();
     calendar.getProperties()
-        .add(new ProdId("Team Flagler's Super iCal4j Calender App Version 6.9"));
+        .add(new ProdId("Team Tannat's iCal4j Calender App Version 2"));
     calendar.getProperties().add(Version.VERSION_2_0);
     calendar.getProperties().add(CalScale.GREGORIAN);
   }

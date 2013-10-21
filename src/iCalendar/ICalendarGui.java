@@ -4,11 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.SocketException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import com.toedter.calendar.JCalendar;
 import net.fortuna.ical4j.data.ParserException;
 import net.fortuna.ical4j.model.DateTime;
 import edu.emory.mathcs.backport.java.util.Arrays;
@@ -22,16 +21,15 @@ public class ICalendarGui {
     private final static String DATEENDLABEL = "   Enter end Date and time:";
     private final static String EVENTLABEL = "Comments:";
     private final static String FILENAMELABEL = "                     Filename:";
-    private final static String CHECKBOXLABEL = "Weekley:";
-    private final static DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy h:mm aa");
+    private final static String CHECKBOXLABEL = "Weekly:";
     private ICalendarProject iCalP;
     private JButton addButton;
     private JButton cancelButton;
     private JButton filenameSaveButton;
     private JButton filenameLoadButton;
     private JCheckBox weekleyCheckBox;
-    private JFormattedTextField dateStartField;
-    private JFormattedTextField dateEndField;
+    private JCalendar dateStartField;
+    private JCalendar dateEndField;
     private JTextField filenameField;
     private JTextField commentField;
     private JTextArea calendarField;
@@ -46,8 +44,8 @@ public class ICalendarGui {
       filenameSaveButton = new JButton("Save");
       filenameLoadButton = new JButton("Load");
       filenameField = new JTextField("default.ics",15);
-      dateStartField = new JFormattedTextField(dateFormat);
-      dateEndField = new JFormattedTextField(dateFormat);
+      dateStartField = new JCalendar();
+      dateEndField = new JCalendar();
       commentField = new JTextField();
       calendarField = new JTextArea(iCalP.getCalendar().toString());
       calendarField.setLineWrap(true);
@@ -64,11 +62,9 @@ public class ICalendarGui {
     
     private void initializeFields(){
       java.util.Date date = new java.util.Date();
-      dateStartField.setValue(date);
-      dateEndField.setValue(date);
+      dateStartField.setDate(date);
+      dateEndField.setDate(date);
       commentField.setText("");
-      dateStartField.setColumns(15);
-      dateEndField.setColumns(15);
       commentField.setColumns(15);
       calendarField.setText(iCalP.getCalendar().toString());
       timeZones.setSelectedItem(java.util.TimeZone.getDefault().getID());
@@ -114,12 +110,12 @@ public class ICalendarGui {
       	public void actionPerformed(ActionEvent event){
       		try {
       			if(weekleyCheckBox.isSelected()){
-      				iCalP.createNewWeeklyEvent(new DateTime((java.util.Date)dateStartField.getValue()),
-      						new DateTime((java.util.Date)dateEndField.getValue()), commentField.getText());
+      				iCalP.createNewWeeklyEvent(new DateTime((java.util.Date)dateStartField.getDate()),
+      						new DateTime((java.util.Date)dateEndField.getDate()), commentField.getText());
       			}
       			else{
-  						iCalP.createNewEvent(new DateTime((java.util.Date)dateStartField.getValue()), 
-  								new DateTime((java.util.Date)dateEndField.getValue()), commentField.getText());
+  						iCalP.createNewEvent(new DateTime((java.util.Date)dateStartField.getDate()), 
+  								new DateTime((java.util.Date)dateEndField.getDate()), commentField.getText());
       			}
 					} catch (SocketException e) {
 						e.printStackTrace();
@@ -225,7 +221,7 @@ public class ICalendarGui {
      */
     private static void createAndShowGUI() {
         //Create and set up the window.
-        JFrame frame = new JFrame("Flaglers iCalendar App");
+        JFrame frame = new JFrame("Team Tannat iCalendar App");
         frame.setAlwaysOnTop(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(380,220);
