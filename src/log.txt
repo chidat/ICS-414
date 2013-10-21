@@ -1,0 +1,429 @@
+ICalendarGui.java:13: error: package net.fortuna.ical4j.data does not exist
+import net.fortuna.ical4j.data.ParserException;
+                              ^
+ICalendarGui.java:14: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.DateTime;
+                               ^
+ICalendarGui.java:15: error: package edu.emory.mathcs.backport.java.util does not exist
+import edu.emory.mathcs.backport.java.util.Arrays;
+                                          ^
+.\ICalendarProject.java:12: error: package net.fortuna.ical4j.data does not exist
+import net.fortuna.ical4j.data.CalendarBuilder;
+                              ^
+.\ICalendarProject.java:13: error: package net.fortuna.ical4j.data does not exist
+import net.fortuna.ical4j.data.CalendarOutputter;
+                              ^
+.\ICalendarProject.java:14: error: package net.fortuna.ical4j.data does not exist
+import net.fortuna.ical4j.data.ParserException;
+                              ^
+.\ICalendarProject.java:15: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.Calendar;
+                               ^
+.\ICalendarProject.java:16: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.Component;
+                               ^
+.\ICalendarProject.java:17: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.Date;
+                               ^
+.\ICalendarProject.java:18: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.DateTime;
+                               ^
+.\ICalendarProject.java:19: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.Property;
+                               ^
+.\ICalendarProject.java:20: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.Recur;
+                               ^
+.\ICalendarProject.java:21: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.TimeZone;
+                               ^
+.\ICalendarProject.java:22: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.TimeZoneRegistry;
+                               ^
+.\ICalendarProject.java:23: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.TimeZoneRegistryFactory;
+                               ^
+.\ICalendarProject.java:24: error: package net.fortuna.ical4j.model does not exist
+import net.fortuna.ical4j.model.ValidationException;
+                               ^
+.\ICalendarProject.java:25: error: package net.fortuna.ical4j.model.component does not exist
+import net.fortuna.ical4j.model.component.VEvent;
+                                         ^
+.\ICalendarProject.java:26: error: package net.fortuna.ical4j.model.component does not exist
+import net.fortuna.ical4j.model.component.VTimeZone;
+                                         ^
+.\ICalendarProject.java:27: error: package net.fortuna.ical4j.model.parameter does not exist
+import net.fortuna.ical4j.model.parameter.Value;
+                                         ^
+.\ICalendarProject.java:28: error: package net.fortuna.ical4j.model.property does not exist
+import net.fortuna.ical4j.model.property.CalScale;
+                                        ^
+.\ICalendarProject.java:29: error: package net.fortuna.ical4j.model.property does not exist
+import net.fortuna.ical4j.model.property.ProdId;
+                                        ^
+.\ICalendarProject.java:30: error: package net.fortuna.ical4j.model.property does not exist
+import net.fortuna.ical4j.model.property.RRule;
+                                        ^
+.\ICalendarProject.java:31: error: package net.fortuna.ical4j.model.property does not exist
+import net.fortuna.ical4j.model.property.Version;
+                                        ^
+.\ICalendarProject.java:32: error: package net.fortuna.ical4j.util does not exist
+import net.fortuna.ical4j.util.UidGenerator;
+                              ^
+.\ICalendarProject.java:36: error: cannot find symbol
+	private Calendar calendar;
+	        ^
+  symbol:   class Calendar
+  location: class ICalendarProject
+.\ICalendarProject.java:37: error: cannot find symbol
+	private TimeZone timezone;
+	        ^
+  symbol:   class TimeZone
+  location: class ICalendarProject
+.\ICalendarProject.java:38: error: cannot find symbol
+	private VTimeZone tz;
+	        ^
+  symbol:   class VTimeZone
+  location: class ICalendarProject
+.\ICalendarProject.java:39: error: cannot find symbol
+	private TimeZoneRegistry registry;
+	        ^
+  symbol:   class TimeZoneRegistry
+  location: class ICalendarProject
+.\ICalendarProject.java:42: error: cannot find symbol
+	public static void main(String[] args) throws IOException, ParserException{
+	                                                           ^
+  symbol:   class ParserException
+  location: class ICalendarProject
+.\ICalendarProject.java:69: error: cannot find symbol
+	public void loadCalendar(String file) throws IOException, ParserException{
+	                                                          ^
+  symbol:   class ParserException
+  location: class ICalendarProject
+.\ICalendarProject.java:85: error: cannot find symbol
+	public Calendar getCalendar(){
+	       ^
+  symbol:   class Calendar
+  location: class ICalendarProject
+.\ICalendarProject.java:89: error: cannot find symbol
+	public void setCalendar(Calendar cal){
+	                        ^
+  symbol:   class Calendar
+  location: class ICalendarProject
+.\ICalendarProject.java:93: error: cannot find symbol
+	public TimeZone getTimeZone(){
+	       ^
+  symbol:   class TimeZone
+  location: class ICalendarProject
+.\ICalendarProject.java:105: error: cannot find symbol
+	public void createNewEvent(Date eventStart, Date eventEnd,  String eventDescription) throws SocketException{
+	                           ^
+  symbol:   class Date
+  location: class ICalendarProject
+.\ICalendarProject.java:105: error: cannot find symbol
+	public void createNewEvent(Date eventStart, Date eventEnd,  String eventDescription) throws SocketException{
+	                                            ^
+  symbol:   class Date
+  location: class ICalendarProject
+.\ICalendarProject.java:119: error: cannot find symbol
+	public void createNewAllDayEvent(Date eventDay, String eventDescription) throws SocketException{
+	                                 ^
+  symbol:   class Date
+  location: class ICalendarProject
+.\ICalendarProject.java:138: error: cannot find symbol
+	public void createNewWeeklyEvent(Date eventDay, Date RepeatUntil, String eventDescription) throws SocketException{
+	                                 ^
+  symbol:   class Date
+  location: class ICalendarProject
+.\ICalendarProject.java:138: error: cannot find symbol
+	public void createNewWeeklyEvent(Date eventDay, Date RepeatUntil, String eventDescription) throws SocketException{
+	                                                ^
+  symbol:   class Date
+  location: class ICalendarProject
+.\ICalendarProject.java:157: error: cannot find symbol
+	public String parseICalendar() throws IOException, ParserException{
+	                                                   ^
+  symbol:   class ParserException
+  location: class ICalendarProject
+ICalendarGui.java:62: error: cannot find symbol
+      Arrays.sort(availableTimezones);
+      ^
+  symbol:   variable Arrays
+  location: class ICalendarGui
+ICalendarGui.java:118: error: cannot find symbol
+      				iCalP.createNewWeeklyEvent(new DateTime((java.util.Date)dateStartField.getValue()),
+      				                               ^
+  symbol: class DateTime
+ICalendarGui.java:119: error: cannot find symbol
+      						new DateTime((java.util.Date)dateEndField.getValue()), commentField.getText());
+      						    ^
+  symbol: class DateTime
+ICalendarGui.java:122: error: cannot find symbol
+  						iCalP.createNewEvent(new DateTime((java.util.Date)dateStartField.getValue()), 
+  						                         ^
+  symbol: class DateTime
+ICalendarGui.java:123: error: cannot find symbol
+  								new DateTime((java.util.Date)dateEndField.getValue()), commentField.getText());
+  								    ^
+  symbol: class DateTime
+ICalendarGui.java:215: error: cannot find symbol
+				} catch (ParserException e) {
+				         ^
+  symbol:   class ParserException
+  location: class ICalendarGui
+.\ICalendarProject.java:48: error: cannot find symbol
+		calendar = new Calendar();
+		               ^
+  symbol:   class Calendar
+  location: class ICalendarProject
+.\ICalendarProject.java:49: error: cannot find symbol
+		registry = TimeZoneRegistryFactory.getInstance().createRegistry();
+		           ^
+  symbol:   variable TimeZoneRegistryFactory
+  location: class ICalendarProject
+.\ICalendarProject.java:50: error: cannot find symbol
+		timezone = registry.getTimeZone(TimeZone.getDefault().getID());
+		                                ^
+  symbol:   variable TimeZone
+  location: class ICalendarProject
+.\ICalendarProject.java:52: error: cannot find symbol
+		calendar.getProperties().add(new ProdId("Team Flagler's Super iCal4j Calender App Version 6.9"));
+		                                 ^
+  symbol:   class ProdId
+  location: class ICalendarProject
+.\ICalendarProject.java:53: error: cannot find symbol
+		calendar.getProperties().add(Version.VERSION_2_0);
+		                             ^
+  symbol:   variable Version
+  location: class ICalendarProject
+.\ICalendarProject.java:54: error: cannot find symbol
+		calendar.getProperties().add(CalScale.GREGORIAN);		
+		                             ^
+  symbol:   variable CalScale
+  location: class ICalendarProject
+.\ICalendarProject.java:60: error: cannot find symbol
+		calendar = new Calendar();
+		               ^
+  symbol:   class Calendar
+  location: class ICalendarProject
+.\ICalendarProject.java:61: error: cannot find symbol
+		registry = TimeZoneRegistryFactory.getInstance().createRegistry();
+		           ^
+  symbol:   variable TimeZoneRegistryFactory
+  location: class ICalendarProject
+.\ICalendarProject.java:64: error: cannot find symbol
+		calendar.getProperties().add(new ProdId("Team Flagler's Super iCal4j Calender App Version 6.9"));
+		                                 ^
+  symbol:   class ProdId
+  location: class ICalendarProject
+.\ICalendarProject.java:65: error: cannot find symbol
+		calendar.getProperties().add(Version.VERSION_2_0);
+		                             ^
+  symbol:   variable Version
+  location: class ICalendarProject
+.\ICalendarProject.java:66: error: cannot find symbol
+		calendar.getProperties().add(CalScale.GREGORIAN);		
+		                             ^
+  symbol:   variable CalScale
+  location: class ICalendarProject
+.\ICalendarProject.java:72: error: cannot find symbol
+		CalendarBuilder cBuilder = new CalendarBuilder();        	
+		^
+  symbol:   class CalendarBuilder
+  location: class ICalendarProject
+.\ICalendarProject.java:72: error: cannot find symbol
+		CalendarBuilder cBuilder = new CalendarBuilder();        	
+		                               ^
+  symbol:   class CalendarBuilder
+  location: class ICalendarProject
+.\ICalendarProject.java:98: error: cannot find symbol
+		registry = TimeZoneRegistryFactory.getInstance().createRegistry();
+		           ^
+  symbol:   variable TimeZoneRegistryFactory
+  location: class ICalendarProject
+.\ICalendarProject.java:108: error: cannot find symbol
+	  VEvent iCalEvent = new VEvent(eventStart, eventEnd, eventDescription);
+	  ^
+  symbol:   class VEvent
+  location: class ICalendarProject
+.\ICalendarProject.java:108: error: cannot find symbol
+	  VEvent iCalEvent = new VEvent(eventStart, eventEnd, eventDescription);
+	                         ^
+  symbol:   class VEvent
+  location: class ICalendarProject
+.\ICalendarProject.java:111: error: cannot find symbol
+		UidGenerator uidGenerator = new UidGenerator("1");
+		^
+  symbol:   class UidGenerator
+  location: class ICalendarProject
+.\ICalendarProject.java:111: error: cannot find symbol
+		UidGenerator uidGenerator = new UidGenerator("1");
+		                                ^
+  symbol:   class UidGenerator
+  location: class ICalendarProject
+.\ICalendarProject.java:123: error: cannot find symbol
+	  VEvent iCalEvent = new VEvent(eventDay, eventDescription);
+	  ^
+  symbol:   class VEvent
+  location: class ICalendarProject
+.\ICalendarProject.java:123: error: cannot find symbol
+	  VEvent iCalEvent = new VEvent(eventDay, eventDescription);
+	                         ^
+  symbol:   class VEvent
+  location: class ICalendarProject
+.\ICalendarProject.java:124: error: cannot find symbol
+	  Recur recur = new Recur(Recur.WEEKLY,null);
+	  ^
+  symbol:   class Recur
+  location: class ICalendarProject
+.\ICalendarProject.java:124: error: cannot find symbol
+	  Recur recur = new Recur(Recur.WEEKLY,null);
+	                    ^
+  symbol:   class Recur
+  location: class ICalendarProject
+.\ICalendarProject.java:124: error: cannot find symbol
+	  Recur recur = new Recur(Recur.WEEKLY,null);
+	                          ^
+  symbol:   variable Recur
+  location: class ICalendarProject
+.\ICalendarProject.java:125: error: cannot find symbol
+	  recur.setUntil( new DateTime(eventDay.getTime()) );
+	                      ^
+  symbol:   class DateTime
+  location: class ICalendarProject
+.\ICalendarProject.java:127: error: cannot find symbol
+	  RRule rule = new RRule(recur);
+	  ^
+  symbol:   class RRule
+  location: class ICalendarProject
+.\ICalendarProject.java:127: error: cannot find symbol
+	  RRule rule = new RRule(recur);
+	                   ^
+  symbol:   class RRule
+  location: class ICalendarProject
+.\ICalendarProject.java:130: error: cannot find symbol
+	  iCalEvent.getProperties().getProperty(Property.DTSTART).getParameters().add(Value.DATE);
+	                                                                              ^
+  symbol:   variable Value
+  location: class ICalendarProject
+.\ICalendarProject.java:130: error: cannot find symbol
+	  iCalEvent.getProperties().getProperty(Property.DTSTART).getParameters().add(Value.DATE);
+	                                        ^
+  symbol:   variable Property
+  location: class ICalendarProject
+.\ICalendarProject.java:132: error: cannot find symbol
+		UidGenerator uidGenerator = new UidGenerator("1");
+		^
+  symbol:   class UidGenerator
+  location: class ICalendarProject
+.\ICalendarProject.java:132: error: cannot find symbol
+		UidGenerator uidGenerator = new UidGenerator("1");
+		                                ^
+  symbol:   class UidGenerator
+  location: class ICalendarProject
+.\ICalendarProject.java:141: error: cannot find symbol
+	  VEvent iCalEvent = new VEvent(eventDay, eventDescription);
+	  ^
+  symbol:   class VEvent
+  location: class ICalendarProject
+.\ICalendarProject.java:141: error: cannot find symbol
+	  VEvent iCalEvent = new VEvent(eventDay, eventDescription);
+	                         ^
+  symbol:   class VEvent
+  location: class ICalendarProject
+.\ICalendarProject.java:142: error: cannot find symbol
+	  Recur recur = new Recur(Recur.WEEKLY,null);
+	  ^
+  symbol:   class Recur
+  location: class ICalendarProject
+.\ICalendarProject.java:142: error: cannot find symbol
+	  Recur recur = new Recur(Recur.WEEKLY,null);
+	                    ^
+  symbol:   class Recur
+  location: class ICalendarProject
+.\ICalendarProject.java:142: error: cannot find symbol
+	  Recur recur = new Recur(Recur.WEEKLY,null);
+	                          ^
+  symbol:   variable Recur
+  location: class ICalendarProject
+.\ICalendarProject.java:143: error: cannot find symbol
+	  recur.setUntil( new DateTime(RepeatUntil.getTime()) );
+	                      ^
+  symbol:   class DateTime
+  location: class ICalendarProject
+.\ICalendarProject.java:145: error: cannot find symbol
+	  RRule rule = new RRule(recur);
+	  ^
+  symbol:   class RRule
+  location: class ICalendarProject
+.\ICalendarProject.java:145: error: cannot find symbol
+	  RRule rule = new RRule(recur);
+	                   ^
+  symbol:   class RRule
+  location: class ICalendarProject
+.\ICalendarProject.java:148: error: cannot find symbol
+	  iCalEvent.getProperties().getProperty(Property.DTSTART).getParameters().add(Value.DATE);
+	                                                                              ^
+  symbol:   variable Value
+  location: class ICalendarProject
+.\ICalendarProject.java:148: error: cannot find symbol
+	  iCalEvent.getProperties().getProperty(Property.DTSTART).getParameters().add(Value.DATE);
+	                                        ^
+  symbol:   variable Property
+  location: class ICalendarProject
+.\ICalendarProject.java:150: error: cannot find symbol
+		UidGenerator uidGenerator = new UidGenerator("1");
+		^
+  symbol:   class UidGenerator
+  location: class ICalendarProject
+.\ICalendarProject.java:150: error: cannot find symbol
+		UidGenerator uidGenerator = new UidGenerator("1");
+		                                ^
+  symbol:   class UidGenerator
+  location: class ICalendarProject
+.\ICalendarProject.java:161: error: cannot find symbol
+	  CalendarBuilder builder = new CalendarBuilder();
+	  ^
+  symbol:   class CalendarBuilder
+  location: class ICalendarProject
+.\ICalendarProject.java:161: error: cannot find symbol
+	  CalendarBuilder builder = new CalendarBuilder();
+	                                ^
+  symbol:   class CalendarBuilder
+  location: class ICalendarProject
+.\ICalendarProject.java:165: error: cannot find symbol
+	      Component component = (Component) i.next();
+	      ^
+  symbol:   class Component
+  location: class ICalendarProject
+.\ICalendarProject.java:165: error: cannot find symbol
+	      Component component = (Component) i.next();
+	                             ^
+  symbol:   class Component
+  location: class ICalendarProject
+.\ICalendarProject.java:169: error: cannot find symbol
+	          Property property = (Property) j.next();
+	          ^
+  symbol:   class Property
+  location: class ICalendarProject
+.\ICalendarProject.java:169: error: cannot find symbol
+	          Property property = (Property) j.next();
+	                               ^
+  symbol:   class Property
+  location: class ICalendarProject
+.\ICalendarProject.java:182: error: cannot find symbol
+		  CalendarOutputter outputter = new CalendarOutputter();
+		  ^
+  symbol:   class CalendarOutputter
+  location: class ICalendarProject
+.\ICalendarProject.java:182: error: cannot find symbol
+		  CalendarOutputter outputter = new CalendarOutputter();
+		                                    ^
+  symbol:   class CalendarOutputter
+  location: class ICalendarProject
+.\ICalendarProject.java:190: error: cannot find symbol
+		} catch (ValidationException e) {
+		         ^
+  symbol:   class ValidationException
+  location: class ICalendarProject
+96 errors
